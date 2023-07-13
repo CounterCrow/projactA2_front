@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyBox</title>
+  <!-- 폰트어썸 -->
+  <script src="https://kit.fontawesome.com/f0e73cfa04.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <!--
+    노토산스 : font-family: 'Noto Sans KR', sans-serif;
+    독도체 : font-family: 'East Sea Dokdo', cursive;
+  -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- 스타일 시트 파일중 제일 첫번째에 불러올 것! -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+</head>
+<body>
+  <header id="header">
+    <div class="center_wrap">
+      <h1><a href="#">My Box</a></h1>
+    <!-- <h1><a href="#"><img src="./img/Netflix_2015_logo.svg" alt="넷플릭스 로고"></a></h1> -->
+    <div id="gnb">
+      <ul>
+        <li id="search">
+          <input type="text">
+        </li>
+        <li id="search_btn">
+          <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>검색</span>
+          </a>        
+        </li>
+        <li id="noti">
+          <a href="#">
+            <i class="fa-solid fa-bell"></i>
+            <span>알림</span>
+          </a>        
+        </li>
+        <li id="mypage">
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+            <span>유저</span>
+          </a>        
+        </li>
+        <li id="burger">
+          <a href="#">
+            <i class="fa-solid fa-bars"></i>
+            <span>메뉴</span>
+          </a>        
+        </li>
+      </ul>
+    </div>
+  </div>
+  </header>
+  <div id="main_visual">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/J6dwYut1D4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div id="visual_content">
+      <div class="center_wrap">
+      <h2>영상 제목</h2>
+      <p>영상 설명 : 영상에대한 작성자의 설명</p>
+      <p>출연: 전도연, 설경구, 김시아<br>
+        장르: 액션 & 어드벤처<br>
+        영화 특징: 폭력적인, 긴장감 넘치는</p>
+        <button type="button"><i class="fa-solid fa-play"></i> 재생</button>
+      </div>
+    </div>
+  </div>
+  <nav id="lnb">
+    <div class="center_wrap">
+      <ul>
+        <li><a href="#">홈</a></li>
+        <li><a href="#">유튜브 저장소</a></li>
+        <li><a href="#">사진 저장소</a></li>
+        <li><a href="#">음악 저장소</a></li>
+        <li><a href="#">하루 일지</a></li>
+        <li><a href="#">나만의 랭킹시트</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div id="main_contents">
+    <div class="center_wrap">
+    <section id="now_playing" class="content_box">
+      <h2>최근 핫한 동영상</h2>
+      <div id="now_playing_container" class="scroll_bar">
+        <ul>
+          <li><a href="#"><img src="./img/my_content_01.webp" alt="철인왕후"></a></li>
+          <li><a href="#"><img src="./img/my_content_02.webp" alt="악의 꽅"></a></li>
+          <li><a href="#"><img src="./img/my_content_03.webp" alt="나의 해방일지"></a></li>
+          <li><a href="#"><img src="./img/my_content_04.jpg" alt="나이트 에이전트"></a></li>
+          <li><a href="#"><img src="./img/my_content_05.webp" alt="이태원 클라스"></a></li>
+          <li><a href="#"><img src="./img/my_content_06.webp" alt="워킹데드"></a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="news" class="content_box">
+      <h2>하루 일지</h2>
+      <div id="news_container" class="scroll_bar">
+        <h3>2023.07.12 오늘은 뭔가 뭔가한 날이다.</h3>
+        <p>뭔가 너무 뭔가뭔가해서 뭔가뭔가하다.</p>
+        <p>기부니가 이상하니 오늘은 여기까지 해야겠다.
+        </p>
+        <p>알빠콩!</p>
+      </div>
+    </section>
+    <section id="log_in">
+      <form action="" id="loginForm" name="loginForm"></form>
+      <ul>
+        <li>
+          <label for="user_id">ID</label>
+          <input type="text" id="user_id">
+        </li>
+        <li>
+          <label for="user_pw">PW</label>
+          <input type="text" id="user_pw">
+        </li>
+      </ul>
+      <button id="login_btn" class="login_box_btn" type="button">Login</button>
+      <button id="join_btn" class="login_box_btn" type="button">Join</button>
+    </section>
+    <section id="new_contents" class="content_box">
+      <h2>내가 좋아하는 드라마 랭킹</h2>
+      <div id="new_contents_container" class="scroll_bar">
+        <ul>
+          <li>
+            <div class="new_img">
+              <img class="rank_img" src="./img/rank_01.svg" alt="대세 콘텐츠">
+              <a href="#"><img class="poster_img" src="./img/new_content_01.jpg" alt="더글로리"></a>
+            </div>
+            <div class="new_text">
+              <h3>더글로리 포스터</h3>
+              <p>2023/07/12</p>
+              <p>설명: 더글로리보고 포스터 가져왔다.<br>
+                태그: #한국 드라마, #드라마, #더글로리</p>
+            </div>
+          </li>
+          <li>
+            <div class="new_img">
+              <img class="rank_img" src="./img/rank_02.svg" alt="대세 콘텐츠">
+              <a href="#"><img class="poster_img" src="./img/new_content_02.webp" alt="대행사"></a>
+            </div>
+            <div class="new_text">
+              <h3>대행사</h3>
+              <p>2023 / 15세 / 에피소드 16개</p>
+              <p>장르 : 한국 드라마, 사회 문제를 다룬 드라마, 드라마<br>
+                시리즈 특징 : 진심 어린</p>
+            </div>
+          </li>
+          <li>
+            <div class="new_img">
+              <img class="rank_img" src="./img/rank_03.svg" alt="대세 콘텐츠">
+              <a href="#"><img class="poster_img" src="./img/new_content_03.jpg" alt="길복순"></a>
+            </div>
+            <div class="new_text">
+              <h3>길복순</h3>
+              <p>2023 / 18세 / 2시간 19분</p>
+              <p>출연 : 전도연, 설경구, 김시아..<br>
+                장르 : 액션 & 어드벤처<br>
+                영화 특징 : 폭력적인, 긴장감 넘치는</p>
+            </div>
+          </li>
+          <li>
+            <div class="new_img">
+              <img class="rank_img" src="./img/rank_04.svg" alt="대세 콘텐츠">
+              <a href="#"><img class="poster_img" src="./img/new_content_04.webp" alt="옆집사람"></a>
+            </div>
+            <div class="new_text">
+              <h3>옆집사람</h3>
+              <p>2022 / 15세 / 1시간 33분</p>
+              <p>출연 : 오동민, 최희진, 이정현<br>
+                장르 : 스릴러 영화, 코미디, 인디 영화<br>
+                영화 특징 : 색다른, 긴장감 넘치는
+                </p>
+            </div>
+          </li>
+          <li>
+            <div class="new_img">
+              <img class="rank_img" src="./img/rank_05.svg" alt="대세 콘텐츠">
+              <a href="#"><img class="poster_img" src="./img/new_content_05.webp" alt="신성한, 이혼"></a>
+            </div>
+            <div class="new_text">
+              <h3>신성한, 이혼</h3>
+              <p>2023 / 15세 / 에피소드 12개</p>
+              <p>출연 : 조승우, 한혜진, 김성균..<br>
+                장르 : 법정 시리즈, 웹툰 원작 한국 드라마, 한국 드라마<br>
+                시리즈 특징 : 위트 있는, 감정을 파고드는</p>
+            </div>
+          </li>
+          <li>
+            <div class="new_img">
+              <img class="rank_img" src="./img/rank_06.svg" alt="대세 콘텐츠">
+              <a href="#"><img class="poster_img" src="./img/new_content_06.webp" alt="일타 스캔들"></a>
+            </div>
+            <div class="new_text">
+              <h3>일타 스캔들</h3>
+              <p>2023 / 15세 / 에피소드 16개</p>
+              <p>출연 : 전도연, 정경호, 이봉련..<br>
+                장르 : 로맨틱 코미디 시리드, 한국 드라마, 코미디 시리즈<br>
+                시리즈 특징 : 유쾌 발랄, 로맨틱
+                </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    </div> 
+  </div>
+  </body>   
+  <footer id="footer" class="content_box">
+    <div class="center_wrap">
+    <div id="fnb">
+      <ul>
+        <li><a href="#">회사정보</a></li>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보취급방침</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+    </div>
+    <div id="sns">
+      <ul>
+        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+      </ul>
+    </div>
+    <div id="company">
+      projact:A-2<br>
+      대표: CounterCrow<br>
+      이메일 주소: <a href="mailto:hongoppa@naver.com"> hongoppa@naver.com</a><br>
+      클라우드 호스팅: Amazon Web Services Inc.<br>
+    </div>
+  </footer>
+
+</html>
