@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+.wrap{
+  width: 800px;
+  margin: auto;
+ }
+.text_box{
+  padding-top: 20px;
+  text-align: center;
+}
+
+#header_all{
+  height : 150px;
+  min-width : 1150px;
+    border-bottom: solid 10px #6AA84F;
+}
+#header_all div{
+  height : 10px;
+  text-align : center;
+  font-weight : bold;
+}
+#header_all div,#header_all img{
+  float : left;
+  cursor: pointer;
+}
+.header_center_cate a{
+  text-decoration: none;
+  color : gray;
+  font-size: 25px;
+}
+.header_login a{
+  text-decoration: none;
+  color : gray;
+  font-size: 25px;
+}
+
+.header_main_logo{
+  width : 20%;
+    margin-top: 35px;
+}
+.header_center_cate{
+  width : 13%;
+    margin-top: 48px;    
+}
+.header_login{
+  width : 25%; 
+  text-align : center;
+  margin-top: 48px;
+  color: gray;
+    font-size: 25px;  
+}
+
+#leftBox{
+  width: 200px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#surveyList{
+  width: 800px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#hotSurveyList
+{
+  width: 200px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
