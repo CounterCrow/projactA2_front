@@ -1,8 +1,10 @@
 @charset "UTF-8";
 
 .wrap{
-  width: 800px;
+  width: 1230px;
+  height: 150px;
   margin: auto;
+  background-color: rgba(0, 0, 0, 0.1);
  }
 .text_box{
   padding-top: 20px;
@@ -65,4 +67,11 @@
   width: 200px;
   height: 600px;
   background-color: rgba(0, 0, 0, 0.1);
+}
+/* footer */
+footer{
+
+  height : 150px;
+  min-width : 1150px;
+  border-top: solid 10px #6AA84F;
 }
